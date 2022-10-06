@@ -1,2 +1,4 @@
 Proyecto de Tienda virtual de tecnologia (Nombre de la tienda)
 
+Tienda en la cual se ofrecerá servicios de venta de partes de computadoras
+
