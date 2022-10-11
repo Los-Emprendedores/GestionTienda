@@ -1,4 +1,6 @@
 Proyecto de Tienda virtual de frutos secos (Nombre de la tienda)
 
-Tienda en la cual se ofrecerá servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces 
+Tienda en la cual se ofrecerá servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces
+
+Alejandro Huertas: Chromecast, GPS Vehículos, Panel Solar, Cepillo Dientes Biodegradable.
 
