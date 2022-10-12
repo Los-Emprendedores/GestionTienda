@@ -1,6 +1,13 @@
+<<<<<<< Updated upstream
 Proyecto de Tienda virtual de frutos secos (Nombre de la tienda)
 
 Tienda en la cual se ofrecerá servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces
 
 Alejandro Huertas: Chromecast, GPS Vehículos, Panel Solar, Cepillo Dientes Biodegradable.
+
+Armando Jose Racero Simarra : Tienda de seguridad electronica, venta de camaras de seguridad.
+=======
+Proyecto de Tienda virtual de tecnologia (Nombre de la tienda)
+Ventas equipo tecnologicos 
+>>>>>>> Stashed changes
 
