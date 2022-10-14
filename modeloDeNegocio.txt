@@ -1,9 +1,9 @@
 <<<<<<< Updated upstream
 Proyecto de Tienda virtual de frutos secos (Nombre de la tienda)
 
-Tienda en la cual se ofrecerá servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces
+Tienda en la cual se ofrecerï¿½ servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces
 
-Alejandro Huertas: Chromecast, GPS Vehículos, Panel Solar, Cepillo Dientes Biodegradable.
+Alejandro Huertas: Chromecast, GPS Vehï¿½culos, Panel Solar, Cepillo Dientes Biodegradable.
 
 Armando Jose Racero Simarra : Tienda de seguridad electronica, venta de camaras de seguridad.
 =======
@@ -11,3 +11,10 @@ Proyecto de Tienda virtual de tecnologia (Nombre de la tienda)
 Ventas equipo tecnologicos 
 >>>>>>> Stashed changes
 
+// A L E J A N D R O 
+Nombre de la Tieda StarkÂ´s Beer
+Nuestro modelo de negocio se basa en la gestion de una tienda virtual 
+de una empresa mayorista cervecera. Esta tienda manejara en su catalogo/inventario, 
+productos cerveceros que se comercializan actalmente en el territorio colombiano, 
+con la opciÃ³n de retiro del pedido en el punto o envio al domicilio; Es necesario aclarar 
+que nuestra tienda tendra hara venta unicamente a personas mayores de edad.
