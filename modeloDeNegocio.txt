@@ -1,7 +1,7 @@
-<<<<<<< Updated upstream
+﻿<<<<<<< Updated upstream
 Proyecto de Tienda virtual de frutos secos (Nombre de la tienda)
 
-Tienda en la cual se ofrecer� servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces
+Jorge Hernán Álvarez Pérez: Tienda en la cual se ofrecer� servicios de venta de Almendras, Mani, Pasas, Arandanos y Nueces
 
 Alejandro Huertas: Chromecast, GPS Veh�culos, Panel Solar, Cepillo Dientes Biodegradable.
 
