@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jalvarezp243/proyectoCiclo4.git"
+    "url": "git+https://github.com/Los-Emprendedores/GestionTienda.git"
   },
   "author": "Los emprendedores",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jalvarezp243/proyectoCiclo4/issues"
+    "url": "https://github.com/Los-Emprendedores/GestionTienda/issues"
   },
-  "homepage": "https://github.com/jalvarezp243/proyectoCiclo4#readme",
+  "homepage": "https://github.com/Los-Emprendedores/GestionTienda#readme",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
