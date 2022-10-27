@@ -121,9 +121,10 @@ f
 /* Footer */
 footer {
   margin-top: 8rem;
-  color: grey;
+  color: #C8B994;
   bottom: 0;
   width: 100%;
+  font-size: 24px;
 }
 
 /* Ratings */
