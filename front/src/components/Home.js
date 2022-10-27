@@ -25,7 +25,7 @@ export const Home = () => {
             {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> :(
                 <Fragment>
                     <MetaData title="Las mejores marcas a los mejores precios"></MetaData>
-            <h1 id="encabezado_productos">Nuestras Marcas</h1>
+            <h1 id="encabezado_productos">Nuestros Productos</h1>
 
             <section id="productos" className='container mt-5'>
                 <div className='row'>
