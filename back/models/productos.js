@@ -35,16 +35,20 @@ const productosSchema=mongoose.Schema({
     ],
     categoria:{
         type:String,
-        required:[true,"Por favor seleccione la categoria del producto."],
+        required:[true,"Por favor seleccione marca que desea."],
         enum:{
             values:[
-                "Alimento seco",
-                "Alimento humedo",
-                "Accesorios",
-                "Cuidado e Higiene",
-                "Medicamentos",
-                "Snacks",
-                "Juguetes"
+                "Aguila",
+                "Poker",
+                "Becks",
+                "Reds",
+                "Costeñita",
+                "Budweiser",
+                "Costeña",
+                "Stella Artois",
+                "Corona",
+                "Michelob",
+                "Pilsen"
             ]
         }
     },

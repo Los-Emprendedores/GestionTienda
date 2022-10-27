@@ -1,11 +1,15 @@
-html,
+@font-face {
+  font-family: Jomhuria;
+  src: url('Jomhuria-Regular.ttf') format('truetype');
+}
 body {
-  font-family: 'Amazon Ember';
+  font-family: 'Jomhuria';
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  color: #453B21;
 }
 
 /* Scroll Bar */
@@ -27,7 +31,7 @@ body {
 }
 
 nav {
-  background-color: #232f3e;
+  background-color: #453B21;
   padding: 1rem 1rem;
 }
 
@@ -47,23 +51,24 @@ f
 
 #login_btn,
 #view_btn {
-  background-color: #febd69;
+  background-color: #C8B994;
   padding: 0.4rem 1.8rem;
-  font-family: calibri;
+  font-family: Jomhuria;
+  font-size: 25px;
 }
 
 #cart {
   font-size: 1rem;
-  color: white;
+  color: #C8B994;
 }
 
 #cart_count {
-  background-color: #febd69;
+  background-color: #C8B994;
   padding: 0.2rem 0.5rem;
   border-radius: 0.2rem;
-  color: black;
+  color: #453B21;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 25px;
 }
 
 /* Home page */

@@ -24,8 +24,8 @@ export const Home = () => {
         <Fragment>
             {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> :(
                 <Fragment>
-                    <MetaData title="Lo mejor para tu compañero"></MetaData>
-            <h1 id="encabezado_productos">Ultimos Productos</h1>
+                    <MetaData title="Las mejores marcas a los mejores precios"></MetaData>
+            <h1 id="encabezado_productos">Nuestras Marcas</h1>
 
             <section id="productos" className='container mt-5'>
                 <div className='row'>
@@ -41,7 +41,7 @@ export const Home = () => {
                                     </div>
                                     <span id="No_de_opiniones"> {producto.numCalificaciones} Reviews</span>
                                 </div>
-                                <p className='card-text'>${producto.precio}</p><Link to={`/producto/${producto._id}`} id="view_btn" className='btn btn-block'>
+                                <p className='card-text'>${producto.precio}</p><Link to={`/producto/${producto._id}`} id="view_btn" className='btn bt   n-block'>
                                     Ver detalle
                                 </Link>
                             </div>
