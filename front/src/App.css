@@ -78,6 +78,8 @@ f
 
 .card {
   height: 100%;
+  background-color: #C8B994;
+
 }
 
 .card-title a {
@@ -85,7 +87,7 @@ f
 }
 
 .card-title a:hover {
-  color: #fa9c23;
+  color: #453B21;
   text-decoration: none;
 }
 
@@ -98,7 +100,7 @@ f
 }
 
 #view_btn {
-  background-color: #fa9c23;
+  background-color: #453B21;
   color: white;
 }
 
