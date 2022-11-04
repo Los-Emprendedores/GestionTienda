@@ -170,7 +170,7 @@ footer {
 #cart_btn,
 #review_btn {
   border-radius: 2rem;
-  background-color: #fa9c23;
+  background-color: #453B21;
   border: none;
   padding: 0.5rem 2rem;
 }
@@ -215,8 +215,8 @@ footer {
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fa9c23;
-  border-color: #fa9c23 transparent;
+  border: 6px solid #453B21;
+  border-color: #453B21 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {
@@ -255,15 +255,15 @@ footer {
 
 #checkout_btn,
 .review-btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #453B21;
+  border-color: #453B21;
   margin-top: 2rem;
   border-radius: 5rem;
 }
 
 #view_order_details {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #453B21;
+  border-color: #453B21;
 }
 
 #order_summary {
@@ -315,8 +315,8 @@ footer {
 }
 
 .wrapper form .btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #453B21;
+  border-color: #453B21;
   color: white;
   margin-top: 2.5rem;
 }
@@ -465,8 +465,8 @@ footer {
 }
 
 .update-btn {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #453B21;
+  border-color: #453B21;
   color: white;
 }
 
@@ -476,8 +476,8 @@ footer {
 
 /* Pagination */
 .page-item.active .page-link {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #453B21;
+  border-color: #453B21;
 }
 
 .page-link {
@@ -506,8 +506,8 @@ footer {
 #sidebar {
   min-width: 100%;
   max-width: 100%;
-  background: #232f3e;
-  color: #fff;
+  background: #453B21;
+  color: #C8B994;
   transition: all 0.3s;
 }
 #sidebar.active {
@@ -527,12 +527,12 @@ footer {
   padding: 10px;
   font-size: 1.1em;
   display: block;
-  color: white;
+  color: #C8B994;
   text-decoration: none;
 }
 #sidebar ul li a:hover {
-  color: #232f3e;
-  background: #fff;
+  color: #453B21;
+  background: #C8B994;
 }
 
 #sidebar ul li a i {
@@ -542,7 +542,7 @@ footer {
 #sidebar ul li.active > a,
 a[aria-expanded='true'] {
   color: #fff;
-  background: #232f3e;
+  background: #453B21;
 }
 a[data-toggle='collapse'] {
   position: relative;
@@ -558,7 +558,7 @@ a[data-toggle='collapse'] {
 ul ul a {
   font-size: 1rem !important;
   padding-left: 30px !important;
-  background: #232f3e;
+  background: #453B21;
 }
 
 ul.CTAs {
