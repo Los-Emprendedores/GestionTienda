@@ -9,13 +9,13 @@ const Sidebar = () => {
                     <li>
                         <Link to="/Dashboard"><i className="fa fa-tachometer"></i> Administración</Link>
                     </li>
-                    {/*Botones de productos*/}
+
                     <li>
                         <a href="#productSubmenu" data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"><i
                             className="fa fa-product-hunt"></i> Productos</a>
                         <ul className="collapse list-unstyled" id="productSubmenu">
                             <li>
-                                <Link to="/allproducts"><i className="fa fa-clipboard"></i> Todos</Link>
+                                <Link to="/ProductList"><i className="fa fa-clipboard"></i> Todos</Link>
                             </li>
 
                             <li>
@@ -23,15 +23,15 @@ const Sidebar = () => {
                             </li>
                         </ul>
                     </li>
-                    {/*Botones de pedidos*/}
+
                     <li>
                         <Link to="/admin/orders"><i className="fa fa-shopping-basket"></i> Pedidos</Link>
                     </li>
-                    {/*Botones de usuarios*/}
+
                     <li>
                         <Link to="/admin/users"><i className="fa fa-users"></i> Usuarios</Link>
                     </li>
-                    {/*Botones de Opiniones*/}
+
                     <li>
                         <Link to="/admin/reviews"><i className="fa fa-star"></i> Opiniones</Link>
                     </li>

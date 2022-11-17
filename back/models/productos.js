@@ -17,6 +17,10 @@ const productosSchema=mongoose.Schema({
       type:String,
       required:[true,"Por favor registre una descripcion para el producto."]
     },
+    recomendacion:{
+        type:String,
+        required:[true,"Por favor ingrese una recomendación de consumo del producto."]
+      },
     calificacion:{
         type: Number,
         default: 0
@@ -33,9 +37,9 @@ const productosSchema=mongoose.Schema({
             }
         }
     ],
-    categoria:{
+    marca:{
         type:String,
-        required:[true,"Por favor seleccione marca que desea."],
+        required:[true,"Por favor seleccione la marca del producto."],
         enum:{
             values:[
                 "Aguila",
@@ -82,6 +86,12 @@ const productosSchema=mongoose.Schema({
             }
         }
     ],
+    user:{
+        type: mongoose.Schema.ObjectId,
+        ref: 'User',
+        required: true
+    },
+
     fechaCreacion:{
         type:Date,
         default:Date.now

@@ -1,25 +1,38 @@
 import React, { Fragment, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { MDBDataTable } from 'mdbreact'
 
 import MetaData from '../layout/MetaData'
 import Sidebar from './Sidebar'
+
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
-import { getProducts } from '../../actions/productActions'
-import {Link } from "react-router-dom"
+import {  clearErrors, deleteProduct, getAdminProducts } from '../../actions/productActions'
 
-export const ProductsList = () => {
-    const { loading, productos, error} = useSelector(state=> state.products)
-    const alert= useAlert();
+const ProductsList = () => {
 
+    const alert = useAlert();
     const dispatch = useDispatch();
+
+    const { loading, error, products } = useSelector(state => state.products);
+    
+    const deleteProductHandler= (id)=> {
+        const response=window.confirm("Esta seguro de querer borrar este producto?")
+        if (response){
+            dispatch(deleteProduct(id))
+            alert.success("Producto eliminado correctamente")
+            window.location.reload(false)
+        }
+    }
     useEffect(() => {
-        if (error){
-            return alert.error(error)
+        dispatch(getAdminProducts());
+
+        if (error) {
+            alert.error(error);
+            dispatch(clearErrors())
         }
 
-        dispatch(getProducts());
-    }, [dispatch])
+    }, [dispatch, alert, error])
 
     const setProducts = () => {
         const data = {
@@ -46,30 +59,27 @@ export const ProductsList = () => {
                 },
                 {
                     label: 'Acciones',
-                    field: 'actions',
+                    field: 'acciones',
                 },
             ],
             rows: []
         }
-
-        productos.forEach(product => {
+        products.forEach(product => {
             data.rows.push({
                 nombre: product.nombre,
                 precio: `$${product.precio}`,
                 inventario: product.inventario,
                 vendedor: product.vendedor,
-                actions: <Fragment>
+                acciones: <Fragment>
                     <Link to={`/producto/${product._id}`} className="btn btn-primary py-1 px-2">
                         <i className="fa fa-eye"></i>
-                    </Link><Link to="/" className="btn btn-warning py-1 px-2">
+                    </Link><Link to={`/updateProduct/${product._id}`} className="btn btn-warning py-1 px-2">
                     <i class="fa fa-pencil"></i>
                     </Link>
 
-                    <Link to="/" className="btn btn-danger py-1 px-2">
+                    <button className="btn btn-danger py-1 px-2 ml-2" onClick={() => deleteProductHandler(product._id)}>
                         <i className="fa fa-trash"></i>
-                    </Link>
-                    
-
+                    </button>
                 </Fragment>
             })
         })
@@ -79,7 +89,7 @@ export const ProductsList = () => {
 
     return (
         <Fragment>
-            <MetaData title={'All Products'} />
+            <MetaData title={'Todos los productos'} />
             <div className="row">
                 <div className="col-12 col-md-2">
                     <Sidebar />
@@ -87,9 +97,9 @@ export const ProductsList = () => {
 
                 <div className="col-12 col-md-10">
                     <Fragment>
-                        <h1 className="my-5">Productos Registrados</h1>
+                        <h1 className="my-5">Todos los Productos</h1>
 
-                        {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> :(
+                        {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> : (
                             <MDBDataTable
                                 data={setProducts()}
                                 className="px-3"
@@ -106,4 +116,5 @@ export const ProductsList = () => {
         </Fragment>
     )
 }
+
 export default ProductsList
