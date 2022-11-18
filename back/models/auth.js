@@ -77,4 +77,4 @@ usuarioSchema.methods.genResetPasswordToken = function () {
     return resetToken
 }
 
-module.exports = mongoose.model("auth", usuarioSchema)
+module.exports = mongoose.model("auth", usuarioSchema) 

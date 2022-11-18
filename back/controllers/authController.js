@@ -51,7 +51,7 @@ exports.loginUser = catchAsyncErrors(async(req, res, next)=>{
         return next(new ErrorHandler("Contraseña invalida",401))
     }
 
-    tokenEnviado(user,200,res)
+    tokenEnviado(user,200,res) 
 
 })
 
@@ -64,7 +64,7 @@ exports.logOut = catchAsyncErrors(async(req, res, next)=>{
 
     res.status(200).json({
         success:true,
-        message: "Cerró sesión"
+        message: "Sesión cerrada"
     })
 })
 
@@ -73,7 +73,7 @@ exports.forgotPassword = catchAsyncErrors ( async( req, res, next) =>{
     const user= await User.findOne({email: req.body.email});
 
     if (!user){
-        return next(new ErrorHandler("Usuario no se encuentra registrado", 404))
+        return next(new ErrorHandler("El Usuario no se encuentra registrado", 404))
     }
     const resetToken= user.genResetPasswordToken();
     
@@ -82,14 +82,14 @@ exports.forgotPassword = catchAsyncErrors ( async( req, res, next) =>{
     //Crear una url para hacer el reset de la contraseña
     const resetUrl= `${req.protocol}://${req.get("host")}/resetPassword/${resetToken}`;
 
-    const mensaje=`Hola!\n\nTu link para ajustar una nueva contraseña es el 
+    const mensaje=`Hola!\n\nTu enlace para ajustar una nueva contraseña es el 
     siguiente: \n\n${resetUrl}\n\n
-    Si no solicitaste este link, por favor comunicate con soporte.\n\n Att:\nVetyShop Store`
+    Si no solicitaste este link, por favor comunicate con soporte.\n\n Att:\nStarkBeer Store`
 
     try{
         await sendEmail({
             email:user.email,
-            subject: "VetyShop Recuperación de la contraseña",
+            subject: "Stark Beer Recuperación de la contraseña",
             mensaje
         })
         res.status(200).json({
