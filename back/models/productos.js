@@ -17,9 +17,9 @@ const productosSchema=mongoose.Schema({
       type:String,
       required:[true,"Por favor registre una descripcion para el producto."]
     },
-    recomendacion:{
+      recomendacion:{
         type:String,
-        required:[true,"Por favor ingrese una recomendación de consumo del producto."]
+        required:[false,"Por favor ingrese una recomendación de consumo del producto."]
       },
     calificacion:{
         type: Number,

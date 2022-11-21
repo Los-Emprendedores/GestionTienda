@@ -10,24 +10,29 @@ import { NEW_PRODUCT_RESET } from '../../constants/productConstants'
 import { useNavigate } from 'react-router-dom'
 
 const NewProduct = () => {
-    const navigate= useNavigate()
+    const navigate = useNavigate()
     const [nombre, setNombre] = useState('');
     const [precio, setPrecio] = useState(0);
     const [descripcion, setDescripcion] = useState('');
-    const [categoria, setCategoria] = useState('');
+    const [recomendacion, setRecomendacion] = useState('');
+    const [marca, setMarca] = useState('');
     const [inventario, setInventario] = useState(0);
     const [vendedor, setVendedor] = useState('');
     const [imagen, setImagen] = useState([]);
     const [imagenPreview, setImagenPreview] = useState([])
 
-    const categorias = [
-        "Alimento seco",
-        "Alimento humedo",
-        "Accesorios",
-        "Cuidado e Higiene",
-        "Medicamentos",
-        "Snacks",
-        "Juguetes"
+    const marcas = [
+        "Aguila",
+        "Poker",
+        "Becks",
+        "Reds",
+        "Costeñita",
+        "Budweiser",
+        "Costeña",
+        "Stella Artois",
+        "Corona",
+        "Michelob",
+        "Pilsen"
     ]
 
     const alert = useAlert();
@@ -57,7 +62,8 @@ const NewProduct = () => {
         formData.set('nombre', nombre);
         formData.set('precio', precio);
         formData.set('descripcion', descripcion);
-        formData.set('categoria', categoria);
+        formData.set('recomendacion', recomendacion);
+        formData.set('marca', marca);
         formData.set('inventario', inventario);
         formData.set('vendedor', vendedor);
 
@@ -128,19 +134,28 @@ const NewProduct = () => {
 
                                 <div className="form-group">
                                     <label htmlFor="description_field">Descripción</label>
-                                    <textarea className="form-control" 
-                                    id="description_field" 
-                                    rows="8" 
-                                    value={descripcion} 
-                                    onChange={(e) => setDescripcion(e.target.value)}></textarea>
+                                    <textarea className="form-control"
+                                        id="description_field"
+                                        rows="6"
+                                        value={descripcion}
+                                        onChange={(e) => setDescripcion(e.target.value)}></textarea>
                                 </div>
 
                                 <div className="form-group">
-                                    <label htmlFor="category_field">Categoria</label>
-                                    <select className="form-control" 
-                                    id="category_field" 
-                                    value={categoria} onChange={(e) => setCategoria(e.target.value)}>
-                                        {categorias.map(categoria => (
+                                    <label htmlFor="recomendacion_field">Recomendacion</label>
+                                    <textarea className="form-control"
+                                        id="recomendacion_field"
+                                        rows="6"
+                                        value={recomendacion}
+                                        onChange={(e) => setRecomendacion(e.target.value)}></textarea>
+                                </div>
+
+                                <div className="form-group">
+                                    <label htmlFor="category_field">Marca</label>
+                                    <select className="form-control"
+                                        id="category_field"
+                                        value={marca} onChange={(e) => setMarca(e.target.value)}>
+                                        {marcas.map(categoria => (
                                             <option key={categoria} value={categoria} >{categoria}</option>
                                         ))}
 

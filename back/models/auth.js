@@ -44,7 +44,7 @@ const usuarioSchema = new mongoose.Schema({
     resetPasswordExpire: Date
 })
 
-//Encriptamos contraseña antes de guardarla
+//Encriptar contraseña antes de guardarla
 usuarioSchema.pre("save", async function (next) {
     if (!this.isModified("password")) {
         next()
@@ -52,7 +52,7 @@ usuarioSchema.pre("save", async function (next) {
     this.password = await bcrypt.hash(this.password, 10)
 })
 
-//Decodificados contraseñas y comparamos
+//Decodificar contraseñas y comparamos
 usuarioSchema.methods.compararPass = async function (passDada){
     return await bcrypt.compare(passDada, this.password)
 }

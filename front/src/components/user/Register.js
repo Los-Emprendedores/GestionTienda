@@ -85,7 +85,7 @@ export const Register = () => {
                                 type="email"
                                 id="email_field"
                                 className="form-control"
-                                name='email'
+                                name='email' 
                                 value={email}
                                 onChange={onChange}
                             />
@@ -109,7 +109,7 @@ export const Register = () => {
                                 <div>
                                     <figure className='avatar mr-3 item-rtl'>
                                         <img
-                                        src={avatarPreview}
+                                        src={avatarPreview} 
                                         className="rounded-circle"
                                         alt="Vistar Previa del Avatar"></img>
                                     </figure>

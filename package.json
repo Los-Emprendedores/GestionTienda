@@ -1,7 +1,7 @@
 {
-  "name": "vetyshop",
+  "name": "starkbeer",
   "version": "1.0.0",
-  "description": "Tienda virtual de productos para mascotas",
+  "description": "Tienda virtual de productos cerveceros",
   "main": "server.js",
   "scripts": {
     "start": "node back/server.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OZZYTA/VetyShop.git"
+    "url": "git+https://github.com/Los-Emprendedores/GestionTienda.git"
   },
-  "author": "Natali Velasquez",
+  "author": "Los Emprendedores",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dabaquero991/AvanzadaShop/issues"
+    "url": "https://github.com/Los-Emprendedores/GestionTienda/issues"
   },
-  "homepage": "https://github.com/dabaquero991/AvanzadaShop#readme",
+  "homepage": "https://github.com/Los-Emprendedores/GestionTienda#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",

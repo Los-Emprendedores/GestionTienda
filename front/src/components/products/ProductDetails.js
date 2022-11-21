@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { Fragment, useState, useEffect } from 'react' 
 import { Carousel } from 'react-bootstrap'
 import MetaData from '../layout/MetaData'
 import { useParams } from "react-router-dom"
@@ -150,8 +150,13 @@ export const ProductDetails = () => {
               <hr />
               <p>Estado: <span id="stock_stado" className={product.inventario > 0 ? 'greenColor' : 'redColor'}>{product.inventario > 0 ? "En existencia" : "Agotado"}</span></p>
               <hr />
+              <p id="marca">Marca: <strong>{product.categoria}</strong></p>
+              <hr />
               <h4 className="mt-2">Descripción:</h4>
               <p>{product.descripcion}</p>
+              <hr />
+              <h4 className="mt-2">Como tomar:</h4>
+              <p>{product.recomendacion}</p>
               <hr />
               <p id="vendedor">Vendido por: <strong>{product.vendedor}</strong></p>
 
@@ -212,4 +217,3 @@ export const ProductDetails = () => {
 
   )
 }
-

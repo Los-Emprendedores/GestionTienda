@@ -3,7 +3,7 @@ const jwt=require("jsonwebtoken")
 const ErrorHandler=require ("../utils/errorHandler")
 const catchAsyncErrors= require("../middleware/catchAsyncErrors")
 
-//Verificamos si estamos autenticados, (existencia y veracidad del token)
+//Verificar si esta autenticado, (existencia y veracidad del token)
 exports.isAuthenticatedUser= catchAsyncErrors(async (req, res, next)=>{
     const {token}= req.cookies
 
