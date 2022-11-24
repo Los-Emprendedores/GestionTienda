@@ -135,7 +135,7 @@ footer {
   display: inline-block;
   position: relative;
   font-family: FontAwesome;
-  color: #fdcc0d;
+  color: #453B21;
 }
 
 .rating-outer::before {
@@ -153,7 +153,7 @@ footer {
 
 .rating-inner::before {
   content: '\f005 \f005 \f005 \f005 \f005';
-  color: #f8ce0b;
+  color: #453B21;
 }
 
 /* Product Details Page */
@@ -248,7 +248,7 @@ footer {
 }
 
 #card_item_price {
-  color: #febd69;
+  color: #453B21;
   font-weight: bold;
   font-size: 1.4rem;
 }
@@ -395,7 +395,7 @@ footer {
 }
 
 .active-step {
-  background: #fa9c23;
+  background: #453B21;
   color: #fff;
 }
 
@@ -403,7 +403,7 @@ footer {
   float: left;
   width: 0;
   border-top: 20px solid transparent;
-  border-left: 15px solid #fa9c23;
+  border-left: 15px solid #453B21;
   border-bottom: 20px solid transparent;
   margin-left: -1px;
 }
@@ -411,9 +411,9 @@ footer {
 .triangle2-active {
   width: 0;
   float: left;
-  border-top: 20px solid #fa9c23;
+  border-top: 20px solid #453B21;
   border-left: 15px solid #fff;
-  border-bottom: 20px solid #fa9c23;
+  border-bottom: 20px solid #453B21;
   margin-right: -1px;
 }
 
@@ -453,8 +453,8 @@ footer {
 }
 
 #edit_profile {
-  background-color: #fa9c23;
-  border-color: #fa9c23;
+  background-color: #453B21;
+  border-color: #453B21;
 }
 
 /* Confirm Order */
@@ -481,11 +481,11 @@ footer {
 }
 
 .page-link {
-  color: #fa9c23;
+  color: #453B21;
 }
 
 .page-link:hover {
-  color: #fa9c23;
+  color: #453B21;
 }
 
 /* Admin Sidebar */
@@ -611,11 +611,11 @@ ul.CTAs a {
 }
 
 .orange {
-  color: #fa9c23;
+  color: #453B21;
 }
 
 .yellow {
-  color: #fdcc0d;
+  color: #453B21;
 }
 
 .review_user {
